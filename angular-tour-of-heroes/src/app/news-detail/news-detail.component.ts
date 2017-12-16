@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { NewsEntry } from '../news-entry';
 
 @Component({
   selector: 'app-news-detail',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewsDetailComponent implements OnInit {
 
+  @Input() news: NewsEntry;
+  
   constructor() { }
 
   ngOnInit() {

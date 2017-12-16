@@ -1,5 +1,4 @@
-<ul>
-  <li *ngFor="let newsInstance of news">
-    <a href='{{newsInstance.url}}'>{{newsInstance.title}}</a>
-  </li>
-</ul>
+<mat-toolbar color="primary">
+  <span>My Application</span>
+</mat-toolbar>
+<app-news-detail *ngFor="let newsInstance of news" [news]="newsInstance"></app-news-detail>
